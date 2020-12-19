@@ -101,7 +101,7 @@ nav li a{
     transition-duration: 0.2s;
 }
 nav li a:hover{
-	color:#262626;
+	color:#c5f7e0;
 	font-size: 13.2pt;
 }
 /*Siegel Suche*/
@@ -150,10 +150,13 @@ input:focus{
     background:#f2f2f2;
     overflow:scroll;
     wider:100%;
-	scrollbar-width: thin;   
+	scrollbar-width: thin; 
+	::-webkit-scrollbar-width: thin;    
 	scrollbar-color: #154d63 #f2f2f2;
+	::-webkit-scrollbar-color: #154d63 #f2f2f2;
 	border-radius:4px;
 	box-shadow:0px 2px 30px rgba(0, 0, 0, 0.10);
+	border:none;
 }
 #names{
 	list-style-type: none;
@@ -163,6 +166,7 @@ input:focus{
 	margin-bottom:24px;	
 	max-height:400px;
 	padding:36px;
+	border:none;
 }
 /*.collection-item[style~="display: block"]:nth-child(n+5) {
     display:none !important;   
@@ -171,14 +175,18 @@ input:focus{
 .collection-item{
     margin-bottom:14px;
     background:white;
-    height:100px;
+    min-height:100px;
     border-radius:8px;
     box-shadow:0px 1px 4px rgba(0, 0, 0, 0.15);
     box-sizing: border-box;
+    border:none;
+}
+.collection-item:focus{
+	outline: none;
 }
 .aligner{
 	height:auto;
-	line-height: 100px;
+	line-height: 133px;
 	padding-left:24px;
 }
 .aligner a{
@@ -190,6 +198,7 @@ input:focus{
 	font-size: 16pt;
 	color:#474747;
 	list-style: none;
+	list-style-type: none;
 }
 details summary .danach:after{
 	content: "+";
@@ -225,7 +234,7 @@ details[open] summary .danach:after {
 #match-list img{
 	width:auto;
     height: 80px;
-    padding:10px;
+    padding-top:24px;
     filter: grayscale(var(--value, 60%));
 }
 #match-list details p{
@@ -234,6 +243,9 @@ details[open] summary .danach:after {
     font-weight: 400;
     font-size: 14pt;
     line-height:18pt;
+    padding:24px;
+    padding-bottom:34px;
+    word-wrap: break-word;
 }
 /*Header*/
 /*--------------------------------------------------*/
