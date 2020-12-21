@@ -24,6 +24,24 @@ body{
     margin:auto;
     margin-top:60px;
 }
+.disclaimer{
+	background:#0e344f;
+	text-align:center;
+}
+.disclaimer .wrapper{
+	max-width: 1240px;
+    margin:auto;
+    padding:1px 0px;
+}
+.disclaimer p{
+	color:#ffffff;
+}
+.disclaimer p{
+	background:#0e344f;
+	color:#ffffff;
+	padding:24px 0px;
+}
+
 /*Navigation*/
 /*--------------------------------------------------*/
 nav{
@@ -124,7 +142,7 @@ input{
     float:center;
     border-radius:8px;
     transition-duration: 0.4s;
-     z-index: 2;
+    z-index: 2;
 }
 input:focus{
     border:2px solid #154d63;
@@ -180,15 +198,22 @@ input:focus{
 
 .collection-item{
     margin-bottom:14px;
-    background:white;
+    background:#ffffff;
     min-height:100px;
     border-radius:8px;
     box-shadow:0px 1px 4px rgba(0, 0, 0, 0.15);
     box-sizing: border-box;
     border:none;
+    outline: none;
+    transition-duration:0.1s;
 }
 .collection-item:focus{
 	outline: none;
+	background:#f9fcfb;
+}
+.collection-item:hover{
+	background:white;
+	background:#f7fcfa;
 }
 .aligner{
 	height:auto;
@@ -217,11 +242,10 @@ details[open] summary .danach:after {
 	grid-column-gap: 2%;
     grid-template-columns:4% 56% 4% 32%;/*!*/
 }
-.aligner:hover img{
-	filter: grayscale(var(--value, 0%));
-}
 /*!*//*!*//*!*/
-.davor:after{font-size:28pt;}
+.davor:after{
+	font-size:28pt;
+}
 .bio .davor:after{
 	content: "🌱 ";
 }
@@ -265,18 +289,17 @@ details[open] summary .danach:after {
     box-sizing: border-box;
     display:block;
 }
-.list-container{
-	/*display:grid;
-	grid-column-gap: 4%;
-    grid-template-columns:auto;
-    grid-template-areas:"bild text";
-    padding: 20px 20px;*/
+.collection-item details summary:hover img{
+	opacity: 0.9;
+	filter: grayscale(var(--value, 8%));
 }
-#match-list img{
+.collection-item img{
 	width:auto;
     height: 80px;
     padding-top:24px;
-    filter: grayscale(var(--value, 60%));
+    opacity: 0.75;
+    filter: grayscale(var(--value, 40%));
+    transition-duration: 0.2s;
 }
 #match-list details p{
 	grid-area:text;
@@ -313,12 +336,15 @@ header h1{
 					0px  4px 0px #154d63,
 					0px  5px 0px #154d63,
 					0px  6px 0px #154d63;
+	margin-bottom:40px;
 }
 header p{
-	margin-top:40px;
+	margin:auto;
+	max-width:740px;
+	margin-bottom:10px;
 	font-size:16pt;
 	font-weight:400;
-	color:#f7fcf9;
+	color:#f9fcfa;
 	font-family: sans-serif;
 	line-height:20pt;
 }
@@ -326,6 +352,10 @@ header p{
 	margin:50px 0px;
 	width:100%;
 	text-align:center;
+}
+.wasmachste p{
+	max-width: 1240px;
+	margin:auto;
 }
 .wasmachste a{
 	text-decoration:none;
@@ -369,8 +399,11 @@ header p{
 	font-size:14pt;
 	line-height:20pt;
 }
-.kurzbeschreibung #stuff .image{
+.kurzbeschreibung #Psychologie .image{
 	background-image:image.jpg;
+}
+.kurzbeschreibung .image{
+	max-height:300px;
 }
 /*Footer*/
 /*--------------------------------------------------*/
