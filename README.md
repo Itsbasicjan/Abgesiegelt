@@ -8,9 +8,8 @@ Mit einer durchsuchbaren Liste kann man einfach Informationen über gewisse Güt
 ## To-do
 * Besseren Chromium support
 * Mobile support
-* Platzhalter Texte einfügen
+* Platzhalter Texte ergänzen
 * Interesannte Texte hinzufügen
 * Rechtschreibfehler
 * Grafiken ergänzen
-* Favicon hinzufügen
 * Vorschaubild hinzufügen
