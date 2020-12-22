@@ -14,5 +14,3 @@ Mit einer durchsuchbaren Liste kann man einfach Informationen über gewisse Güt
 * Grafiken ergänzen
 * Favicon hinzufügen
 * Vorschaubild hinzufügen
-
-* Suchlisten problem durch das davor item verursacht

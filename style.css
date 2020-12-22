@@ -235,43 +235,43 @@ details[open] summary .danach:after {
 .collection-item details summary{
 	display:grid;
 	grid-column-gap: 2%;
-    grid-template-columns:4% 56% 4% 32%;/*!*/
+    grid-template-columns:56% 4% 32%;/*!*/
 }
 /*!*//*!*//*!*/
-.davor:after{
-	font-size:28pt;
+.davor:before{
+	font-size:18pt;
 }
-.bio .davor:after{
+.bio .davor:before{
 	content: "🌱 ";
 }
-.nrg .davor:after{
+.nrg .davor:before{
 	content: "♻️ ";
 }
-.spiel .davor:after{
+.spiel .davor:before{
 	content: "🕹️ ";
 }
-.sicher .davor:after{
+.sicher .davor:before{
 	content: "🛡️️ ";
 }
-.strom .davor:after{
+.strom .davor:before{
 	content: "🔌 ";
 }
-.sieger .davor:after{
+.sieger .davor:before{
 	content: "🏆 ";
 }
-.bildschirm .davor:after{
+.bildschirm .davor:before{
 	content: "🖥️ ";
 }
-.internet .davor:after{
+.internet .davor:before{
 	content: "🌐 ";
 }
-.neutral .davor:after{
+.neutral .davor:before{
 	content: "🔗 ";
 }
-.radio .davor:after{
+.radio .davor:before{
 	content:"📡 "
 }
-.factory .davor:after{
+.factory .davor:before{
 	content:"🏭 "
 }
 #names li{
