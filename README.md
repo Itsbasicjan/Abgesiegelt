@@ -1,4 +1,4 @@
-# Abgesiegelt WIP
+#Abgesiegelt WIP
 Eine Website um einen Überblick über Gütesiegel zu geben.
 
 Es gibt auf jedem Pridukt Gütesiegel, doch was machen sie aus und wie beeinflussen sie dich? All diese Fragen versuchen wir zu beantworten.
@@ -8,8 +8,11 @@ Mit einer durchsuchbaren Liste kann man einfach Informationen über gewisse Güt
 ## To-do
 * Besseren Chromium support
 * Mobile support
-* Platzhalter Texte ergänzen
+* Platzhalter Texte einfügen
 * Interesannte Texte hinzufügen
 * Rechtschreibfehler
 * Grafiken ergänzen
+* Favicon hinzufügen
 * Vorschaubild hinzufügen
+
+* Suchlisten problem durch das davor item verursacht
