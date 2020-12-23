@@ -201,14 +201,13 @@ input:focus{
     box-sizing: border-box;
     border:none;
     outline: none;
-    transition-duration:0.1s;
+    transition-duration:0.2s;
 }
 .collection-item:focus{
 	outline: none;
 }
 .collection-item:hover{
-	background:white;
-	background:#f7fcfa;
+	background:#f7f9f8;
 }
 .aligner{
 	height:auto;
@@ -274,6 +273,24 @@ details[open] summary .danach:after {
 .factory .davor:before{
 	content:"🏭 "
 }
+.vegan .davor:before{
+	content:"🥦 "
+}
+.baum .davor:before{
+	content:"🌲 "
+}
+.fisch .davor:before{
+	content:"🐟 "
+}
+.ei .davor:before{
+	content:"🥚 "
+}
+.hygene .davor:before{
+	content:"🧼 "
+}
+.fair .davor:before{
+	content:"🤝 "
+}
 #names li{
     color:#4f4f4f;
     font-family: sans-serif;
@@ -286,7 +303,7 @@ details[open] summary .danach:after {
 }
 .collection-item details summary:hover img{
 	opacity: 0.9;
-	filter: grayscale(var(--value, 8%));
+	filter: grayscale(var(--value, 0%));
 }
 .collection-item img{
 	width:auto;
@@ -294,7 +311,9 @@ details[open] summary .danach:after {
     padding-top:24px;
     opacity: 0.75;
     filter: grayscale(var(--value, 40%));
-    transition-duration: 0.2s;
+    -webkit-filter: grayscale(var(--value, 40%));
+    transition-duration: 0.4s;
+    transition-property: filter, opacity;
 }
 .collection-item details p{
 	grid-area:text;
@@ -376,7 +395,7 @@ header p{
 	display:grid;
 	grid-column-gap: 2%;
 	grid-template-columns:30% 68%;
-	margin-bottom:20px;
+	margin-bottom:50px;
 }
 .kurzbeschreibung div{
 	background:white;
@@ -397,7 +416,10 @@ header p{
 	background-image:image.jpg;
 }
 .kurzbeschreibung .image{
-	max-height:300px;
+	max-height:280px;
+}
+.kurzbeschreibung #netzteil .image{
+	
 }
 /*Footer*/
 /*--------------------------------------------------*/
@@ -451,21 +473,27 @@ footer a{
 .quellenliste{
 	list-style-type:none;
 	width:100%;
+	margin-left:-40px;
 }
 .quellenlisten-item{
 	display:grid;
 	grid-column-gap:4%;
-	grid-template-columns:26% 70%;
+	grid-template-columns:20% 76%;
 	color:black;
-	font-size:12pt;
+	font-size:11pt;
 	margin-bottom:12px;
+	padding:6px;
+	transition-duration:0.2s;
+}
+.quellenlisten-item:hover{
+	background:#e0e0e0;
 }
 .quelle{
 	color:#03c6b3;
-	font-size:12pt;
+	word-wrap:wrap-word;
 }
 .quelleitem{
-
+	color:#a0a0a0;
 }
 @media only screen and (max-width: 240px){
 
