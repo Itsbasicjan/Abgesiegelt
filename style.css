@@ -453,62 +453,19 @@ footer a{
 	width:100%;
 }
 .quellenlisten-item{
-	
+	display:grid;
+	grid-column-gap:4%;
+	grid-template-columns:26% 70%;
+	color:black;
+	font-size:12pt;
+	margin-bottom:12px;
 }
 .quelle{
-	
+	color:#03c6b3;
+	font-size:12pt;
 }
 .quelleitem{
-	
-}
-/*404 Page*/
-/*--------------------------------------------------*/
-.error-wrapper button{
-	text-align:center;
-	padding:24px 16px;
-	color:#0e344f;
-	background:white;
-	font-size:18pt;
-	font-weight:600;
-	border-radius:8px;
-	border:none;
-	box-shadow:0px 16px #001626;
-	transition-duration:0.2s;
-}
-.error-wrapper{
-    max-width: 1024px;
-    margin:auto;
-    margin-top:60px;
-    text-align:center;
-    
-}
-.error-wrapper h1{
-	color:white;
-	font-size:68pt;
-	font-weight:900;
-	text-shadow:0px 16px #001626,
-				0px 12px #001626,
-				0px 8px #001626,			
-				0px 6px #001626,
-				0px 4px #001626,
-				0px 2px #001626;
-}
-.error-wrapper h2{
-	color:white;
-	font-size:36pt;
-	font-weight:400;
-}
-.error-wrapper p{
-	color:white;
-	font-size:16pt;
-	font-weight:400;
-}
-.error-wrapper button:hover {background-color: #e8ecfc}
 
-.error-wrapper button:active {
-  background-color: #e8ecfc;
-  box-shadow: 0 8px #001626;
-  transform: translateY(8px);
 }
 @media only screen and (max-width: 240px){
 
