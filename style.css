@@ -205,6 +205,7 @@ input:focus{
 }
 .collection-item:focus{
 	outline: none;
+	border:none;
 }
 .collection-item:hover{
 	background:#f7f9f8;
@@ -420,6 +421,45 @@ header p{
 }
 .kurzbeschreibung #netzteil .image{
 	
+}
+
+
+#faq {
+	margin-top:100px;
+}
+.faq-header{
+	font-size:24pt;
+	color:#0e344f;
+}
+#faq summary{
+	font-size:20pt;
+	color:#303030;
+	border:none;
+	outline: none;
+}
+#faq details{
+	font-size:18pt;
+	color:#303030;
+	margin-bottom:30px;
+	border-bottom:1px #cccccc solid;
+	padding-bottom:10px;
+	outline: none;
+}
+#faq details p{
+	font-size:16pt;
+}
+#faq details:focus{
+	border:none;
+	outline: none;
+}
+#links{
+	list-style-type: none;
+	color:#03c6b3;
+	font-size:16pt;
+}
+#links li{
+	list-style-type: square;
+	margin:20px 0px;
 }
 /*Footer*/
 /*--------------------------------------------------*/
