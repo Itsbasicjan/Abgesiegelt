@@ -17,7 +17,6 @@ body{
 .wrapper{
     max-width: 1240px;
     margin:auto;
-    padding:24px 12px;
 }
 .wrapper-beschreibung{
     max-width: 1024px;
@@ -39,7 +38,7 @@ body{
 .disclaimer p{
 	background:#0e344f;
 	color:#ffffff;
-	padding:24px 0px;
+	padding:8px 0px;
 }
 
 /*Navigation*/
@@ -52,6 +51,7 @@ nav{
     box-sizing: border-box;
     overflow: visible;
     z-index: 69;
+    padding:14px 12px;
 }
 .navigation{
     display:grid;
@@ -142,7 +142,7 @@ input{
     float:center;
     border-radius:8px;
     transition-duration: 0.4s;
-    z-index: 2;
+    z-index: 3;
 }
 input:focus{
     border:2px solid #154d63;
@@ -150,6 +150,7 @@ input:focus{
 .search_input{
     width:100%;
     margin:auto;
+    z-index: 3;
 }
 .search{
     padding:20px 0px;
@@ -159,6 +160,7 @@ input:focus{
     box-sizing: border-box;
 	bottom:-40pt;
 	position:relative;
+	z-index: 3;
 }
 /*Siegel Suche Liste*/
 /*--------------------------------------------------*/
@@ -174,7 +176,7 @@ input:focus{
     overflow:scroll;
     overflow-x: hidden;
     wider:100%;
-	scrollbar-width: normal; 
+	scrollbar-width: thin; 
 	::-webkit-scrollbar-width: thin;    
 	scrollbar-color: #154d63 #f2f2f2;
 	::-webkit-scrollbar-color: #154d63 #f2f2f2;
@@ -203,8 +205,9 @@ input:focus{
     outline: none;
     transition-duration:0.2s;
 }
-.collection-item:focus{
+.collection-item details:focus{
 	outline: none;
+	outline:none -webkit-focus-ring-color;
 	border:none;
 }
 .collection-item:hover{
@@ -225,6 +228,12 @@ input:focus{
 	color:#474747;
 	list-style: none;
 	list-style-type: none;
+	border:none;
+	outline: none;
+}
+#names li summary:focus{
+	border:none;
+	outline:none -webkit-focus-ring-color;
 }
 #names details summary::-webkit-details-marker{
 	display:none;
@@ -295,6 +304,18 @@ details[open] summary .danach:after {
 .fair .davor:before{
 	content:"🤝 "
 }
+.brett .davor:before{
+	content:"🎲 "
+}
+.film .davor:before{
+	content:"🎬 "
+}
+.game .davor:before{
+	content:"🎮 "
+}
+.toy .davor:before{
+	content:"🧸 "
+}
 #names li{
     color:#4f4f4f;
     font-family: sans-serif;
@@ -316,7 +337,7 @@ details[open] summary .danach:after {
     opacity: 0.75;
     filter: grayscale(var(--value, 40%));
     -webkit-filter: grayscale(var(--value, 40%));
-    transition-duration: 0.4s;
+    transition-duration: 0.2s;
     transition-property: filter, opacity;
 }
 .collection-item details p{
@@ -401,6 +422,12 @@ header p{
 	grid-template-columns:30% 68%;
 	margin-bottom:50px;
 }
+.kurzbeschreibung.anders{
+	display:grid;
+	grid-column-gap: 2%;
+	grid-template-columns:68% 30%;
+	margin-bottom:50px;
+}
 .kurzbeschreibung div{
 	background:white;
 	border-radius:8px;
@@ -416,19 +443,31 @@ header p{
 	font-size:14pt;
 	line-height:20pt;
 }
-.kurzbeschreibung #Psychologie .image{
-	background-image:image.jpg;
-}
 .kurzbeschreibung .image{
-	max-height:280px;
+	height:280px;
 }
-.kurzbeschreibung #netzteil .image{
-	
+#psycho .image{
+	background-image:url("https://mobil.express.de/image/37599166/2x1/940/470/dcd8c1a3c617756df853fa71cba1fb03/uv/einkauf-symbolbild-10112020.jpg");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: center;
 }
-
-
+#netzteil .image{
+	background-image:url("Bilder/netzteildasbildzumfilm.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+#experement .image{
+	background-image:url("Bilder/Experement Bild.jpeg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+/*Faq*/
+/*--------------------------------------------------*/
 #faq {
-	margin-top:100px;
+	padding-top:100px;
 }
 .faq-header{
 	font-size:24pt;
@@ -472,6 +511,7 @@ footer{
 	font-size:10pt;
 	margin-top:100px;
 	color:grey;
+	padding:24px 12px;
 }
 .footer-container{
 	display:grid;
@@ -538,6 +578,17 @@ footer a{
 .quelleitem{
 	color:#a0a0a0;
 }
-@media only screen and (max-width: 240px){
+/*Tablet Optimization*/
+/*--------------------------------------------------*/
+@media only screen and (max-width: 1024px){
+.wrapper{
+	margin:0px 10px;
+}
+
+}
+/*Handy Optimization*/
+/*--------------------------------------------------*/
+@media only screen and (max-width: 400px){
+
 
 }

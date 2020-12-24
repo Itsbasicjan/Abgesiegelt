@@ -8,9 +8,7 @@ Mit einer durchsuchbaren Liste kann man einfach Informationen über gewisse Güt
 ![Bild der Website](https://herrfreude.github.io/Abgesiegelt/Bilder/Vorschaubild.png)
 
 ## To-do
-* Besseren Chromium support
 * Mobile support
 * Interesannte Texte hinzufügen
 * Rechtschreibfehler
 * Grafiken ergänzen
-* Vorschaubild hinzufügen
