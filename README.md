@@ -5,6 +5,8 @@ Es gibt auf jedem Pridukt Gütesiegel, doch was machen sie aus und wie beeinflus
 
 Mit einer durchsuchbaren Liste kann man einfach Informationen über gewisse Gütesiegel erhalten. Dazu kommen noch weitere herausgearbeitete Informationen wie Güresiegel von der Industrie genutzt werden können, also diese dich ausnutzen.
 
+![Bild der Website](https://herrfreude.github.io/Abgesiegelt/Bilder/Vorschaubild.png)
+
 ## To-do
 * Besseren Chromium support
 * Mobile support
