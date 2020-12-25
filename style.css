@@ -316,6 +316,12 @@ details[open] summary .danach:after {
 .toy .davor:before{
 	content:"🧸 "
 }
+.ton .davor:before{
+	content:"🔊 "
+}
+.kino .davor:before{
+	content:"🎞️ "
+}
 #names li{
     color:#4f4f4f;
     font-family: sans-serif;
