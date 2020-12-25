@@ -9,6 +9,4 @@ Mit einer durchsuchbaren Liste kann man einfach Informationen über gewisse Güt
 
 ## To-do
 * Mobile support
-* Interesannte Texte hinzufügen
 * Rechtschreibfehler
-* Grafiken ergänzen
